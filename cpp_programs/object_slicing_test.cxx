@@ -17,7 +17,7 @@ class Dog : public Pet
 	public:
 		virtual string getDescription() const
 		{
-			return "this is a god class";
+			return "this is a dog class";
 		}
 };
 
