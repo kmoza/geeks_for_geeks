@@ -30,11 +30,11 @@ class Test
 			delete this;
 		}
 
-		/*void print()
+		void print()
 		{
 			cout << "x = " << x << " y = " << y << endl;
 		}
-		*/
+		
 
 };
 
@@ -42,7 +42,7 @@ int main()
 {
 	Test *obj = new Test();
 	obj->destroy();
-	//obj.print();
+	obj->print();
 	return 0;
 }
 
