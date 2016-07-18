@@ -3,7 +3,7 @@
 int search(int arr[], int n, int x)
 {
 	int i;
-	for(i = 0; i < n; i++)
+	for(i = 0; i <= n; i++)
 	{
 		if(arr[i] == x)
 		{
@@ -15,9 +15,10 @@ int search(int arr[], int n, int x)
 
 int main()
 {
-	int arr[] = {1,10.30,15};
+	int arr[] = {1,10,30,15};
 	int x = 30;
 	int n = sizeof(arr)/sizeof(arr[0]);
+	printf("%d is sizeof array\n", n);
 	printf("%d is present at index %d\n", x, search(arr, n, x));
 	return 0;
 }
