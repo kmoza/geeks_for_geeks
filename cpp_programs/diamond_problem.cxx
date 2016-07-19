@@ -10,9 +10,14 @@ class Person
 			cout << "Person::Person(int) called" << endl;
 
 		}
+
+		Person()
+		{
+			cout << "Person::Person() called" << endl;
+		}
 };
 
-class Faculty : public Person
+class Faculty : virtual public Person
 {
 	public:
 		Faculty(int x):Person(x)
@@ -22,7 +27,7 @@ class Faculty : public Person
 
 };
 
-class Student : public Person
+class Student : virtual public Person
 {
 	public:
 		Student(int x):Person(x)
@@ -34,7 +39,7 @@ class Student : public Person
 class TA : public Faculty, public Student
 {
 	public:
-		TA(int x):Student(x),Faculty(x)
+		TA(int x):Student(x),Faculty(x),Person(x)
 		{
 			cout << "TA::TA(int) called" << endl;
 		}
