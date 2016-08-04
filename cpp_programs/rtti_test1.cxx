@@ -4,6 +4,10 @@ using namespace std;
 
 class B
 {
+	public:
+		virtual void fun()
+		{
+		}
 };
 
 class D : public B
