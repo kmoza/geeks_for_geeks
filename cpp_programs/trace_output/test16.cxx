@@ -34,9 +34,9 @@ class B
 	A a;
 
 	public:
-		B(A& a)
+		B(A& a):a(a)
 		{
-			this->a = a;
+			//this->a = a;
 			cout << "B constructor" << endl;
 		}
 
